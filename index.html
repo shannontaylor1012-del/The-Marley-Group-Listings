@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Marley Group Listings</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#" aria-label="The Marley Group Listings">
+          <span class="brand-mark">MG</span>
+          <span>
+            <strong>The Marley Group</strong>
+            <small>Listings</small>
+          </span>
+        </a>
+
+        <nav class="nav-stack" aria-label="Sections">
+          <button class="nav-item active" type="button" data-view="listings">
+            <span class="nav-icon">L</span>
+            Listings
+          </button>
+          <button class="nav-item" type="button" data-view="saved">
+            <span class="nav-icon">S</span>
+            Saved
+          </button>
+          <button class="nav-item" type="button" data-view="market">
+            <span class="nav-icon">M</span>
+            Market
+          </button>
+          <button class="nav-item" type="button" data-view="concierge">
+            <span class="nav-icon">C</span>
+            Contact
+          </button>
+        </nav>
+
+        <section class="advisor-panel" aria-label="Advisor">
+          <p>Listing Team</p>
+          <strong>Questions, showings, and offer support for current listings.</strong>
+          <button class="gold-button" type="button" id="openConcierge">Request Showing</button>
+        </section>
+      </aside>
+
+      <main>
+        <section class="hero-section">
+          <div class="hero-copy">
+            <p class="eyebrow">Current listings</p>
+            <h1>The Marley Group Listings</h1>
+            <p>
+              Browse active Marley Group properties with current list prices,
+              listing details, photos, and links to each Zillow page.
+            </p>
+          </div>
+          <div class="hero-stat">
+            <span id="heroCount">7</span>
+            <small>active listings</small>
+          </div>
+        </section>
+
+        <section class="toolbar" aria-label="Listing filters">
+          <label class="search-box">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="City, style, feature" />
+          </label>
+
+          <label>
+            <span>Price</span>
+            <select id="priceFilter">
+              <option value="all">All prices</option>
+              <option value="under250">Under $250K</option>
+              <option value="250to500">$250K to $500K</option>
+              <option value="over500">$500K+</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Property type</span>
+            <select id="typeFilter">
+              <option value="all">All types</option>
+              <option value="Single Family">Single Family</option>
+              <option value="Ranch">Ranch</option>
+              <option value="Manufactured">Manufactured</option>
+              <option value="Riverfront">Riverfront</option>
+            </select>
+          </label>
+
+          <div class="segmented" role="group" aria-label="Listing view">
+            <button class="segment active" type="button" data-sort="featured">Featured</button>
+            <button class="segment" type="button" data-sort="price">Price</button>
+            <button class="segment" type="button" data-sort="new">Newest</button>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div>
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Available now</p>
+              </div>
+              <p id="resultCount">Showing 7 listings</p>
+            </div>
+            <div class="listing-grid" id="listingGrid" aria-live="polite"></div>
+          </div>
+
+          <aside class="insights-panel" aria-label="Portfolio insights">
+            <section class="market-card">
+              <p class="eyebrow">Total list price</p>
+              <strong id="portfolioValue">$39.4M</strong>
+              <span>Across active listings shown</span>
+            </section>
+            <section class="market-card dark-map">
+              <p class="eyebrow">Listing areas</p>
+              <div class="map-lines" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <ul id="cityList"></ul>
+            </section>
+            <section class="market-card">
+              <p class="eyebrow">Saved shortlist</p>
+              <strong id="savedCount">0</strong>
+              <span>Listings ready for review</span>
+            </section>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="listingDialog">
+      <div class="dialog-body">
+        <button class="icon-button close-dialog" type="button" aria-label="Close details">x</button>
+        <img id="dialogImage" alt="" />
+        <div class="dialog-copy">
+          <p class="eyebrow" id="dialogType"></p>
+          <h2 id="dialogTitle"></h2>
+          <p id="dialogLocation"></p>
+          <strong id="dialogPrice"></strong>
+          <p id="dialogDescription"></p>
+          <div class="detail-row" id="dialogDetails"></div>
+          <div class="dialog-actions">
+            <button class="gold-button" type="button">Request Showing</button>
+            <a class="ghost-button link-button" id="dialogZillowLink" href="https://www.zillow.com/" target="_blank" rel="noreferrer">Open Zillow</a>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
