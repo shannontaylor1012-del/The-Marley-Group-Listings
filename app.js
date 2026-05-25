@@ -121,6 +121,7 @@ const portfolioValue = document.querySelector("#portfolioValue");
 const cityList = document.querySelector("#cityList");
 const savedCount = document.querySelector("#savedCount");
 const dialog = document.querySelector("#listingDialog");
+const contactDialog = document.querySelector("#contactDialog");
 
 function formatShortPrice(value) {
   return currency.format(value);
@@ -301,9 +302,14 @@ document.querySelectorAll(".nav-item").forEach((button) => {
 });
 
 document.querySelector("#openConcierge").addEventListener("click", () => {
-  const firstListing = getVisibleListings()[0] || listings[0];
-  openDetails(firstListing.id);
+  contactDialog.showModal();
 });
+
+document.querySelector(".dialog-actions .gold-button").addEventListener("click", () => {
+  contactDialog.showModal();
+});
+
+document.querySelector(".close-contact").addEventListener("click", () => contactDialog.close());
 
 grid.addEventListener("click", (event) => {
   const detailButton = event.target.closest("[data-detail]");
