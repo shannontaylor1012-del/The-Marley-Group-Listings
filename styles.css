@@ -514,6 +514,40 @@ dialog::backdrop {
   backdrop-filter: blur(6px);
 }
 
+.contact-dialog {
+  width: min(460px, calc(100vw - 32px));
+}
+
+.contact-card {
+  position: relative;
+  padding: 34px;
+}
+
+.contact-card h2 {
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+
+.phone-link {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--gold-bright);
+  font-size: 2rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.contact-card p:last-child {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.close-contact {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
 .dialog-body {
   position: relative;
   display: grid;
