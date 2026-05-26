@@ -2,6 +2,10 @@
   "name": "The Marley Group with C21-803 Realty Listings",
   "short_name": "Marley Listings",
   "description": "Active property listings from The Marley Group with C21-803 Realty.",
+  "share_target": {
+    "action": "/",
+    "method": "GET"
+  },
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
