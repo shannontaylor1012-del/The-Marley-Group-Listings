@@ -1,6 +1,6 @@
-# The Marley Group Listings
+# The Marley Group with C21-803 Realty Listings
 
-A simple static listings app for The Marley Group. It includes active property cards, full list prices, property photos, search and filters, saved listings, detail popups, and Zillow links.
+A simple static listings app for The Marley Group with C21-803 Realty. It includes active property cards, full list prices, property photos, search and filters, saved listings, detail popups, and Zillow links.
 
 ## Files
 
