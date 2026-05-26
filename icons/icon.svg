@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title>The Marley Group with C21-803 Realty</title>
+  <rect width="512" height="512" rx="96" fill="#080706"/>
+  <rect x="42" y="42" width="428" height="428" rx="72" fill="none" stroke="#c9a24d" stroke-width="18"/>
+  <text x="256" y="242" fill="#f2d487" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="700" text-anchor="middle">MG</text>
+  <text x="256" y="318" fill="#f8f2e7" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" text-anchor="middle">C21-803</text>
+  <text x="256" y="366" fill="#bdb2a1" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" letter-spacing="4" text-anchor="middle">REALTY</text>
+</svg>
