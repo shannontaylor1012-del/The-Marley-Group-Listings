@@ -6,7 +6,7 @@ const APP_ASSETS = [
   "/app.js",
   "/manifest.webmanifest",
   "/icons/icon.svg",
-  "/assets/social-share.svg"
+  "/assets/social-share-600x315.jpg"
 ];
 
 self.addEventListener("install", (event) => {
