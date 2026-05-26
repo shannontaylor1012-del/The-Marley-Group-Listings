@@ -322,3 +322,9 @@ grid.addEventListener("click", (event) => {
 document.querySelector(".close-dialog").addEventListener("click", () => dialog.close());
 
 renderListings();
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("service-worker.js").catch(() => {});
+  });
+}
