@@ -1,0 +1,19 @@
+{
+  "name": "The Marley Group with C21-803 Realty Listings",
+  "short_name": "Marley Listings",
+  "description": "Active property listings from The Marley Group with C21-803 Realty.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080706",
+  "theme_color": "#080706",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
