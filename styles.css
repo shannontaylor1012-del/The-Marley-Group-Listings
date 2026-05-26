@@ -528,9 +528,14 @@ dialog::backdrop {
   font-size: 2rem;
 }
 
+.phone-list {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
 .phone-link {
   display: inline-block;
-  margin-bottom: 18px;
   color: var(--gold-bright);
   font-size: 2rem;
   font-weight: 800;
