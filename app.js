@@ -96,6 +96,20 @@ const listings = [
     zillowUrl: "https://www.zillow.com/homedetails/2609-Riverland-Dr-Cayce-SC-29033/11225102_zpid/",
     image: "https://ap.rdcpix.com/e6ab76335e1720dd64006a7e47bb1571l-m1096806327od-w640_h480.jpg",
     description: "Cayce riverfront property on 1.73 acres with updated interiors, flexible lower level, workshop, and Congaree River setting."
+  },
+  {
+    id: 8,
+    title: "758 Maple St",
+    location: "Pelion, SC 29123",
+    type: "Single Family",
+    price: 155000,
+    beds: 3,
+    baths: 2,
+    sqft: 1800,
+    days: 1,
+    zillowUrl: "https://www.zillow.com/homes/758-Maple-St,-Pelion,-SC-29123_rb/",
+    image: "assets/social-share.svg",
+    description: "Pelion single-family property on Maple Street with three bedrooms, two baths, and approximately 1,800 square feet."
   }
 ];
 
