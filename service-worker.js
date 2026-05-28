@@ -1,4 +1,4 @@
-const CACHE_NAME = "marley-listings-v9";
+const CACHE_NAME = "marley-listings-v10";
 const APP_ASSETS = [
   "/",
   "/index.html",
@@ -8,7 +8,7 @@ const APP_ASSETS = [
   "/manifest.webmanifest",
   "/icons/icon.svg",
   "/assets/social-share-600x315.jpg",
-  "/assets/maple-st-full.jpg?v=1"
+  "/assets/maple-st.jpg"
 ];
 
 self.addEventListener("install", (event) => {
@@ -29,12 +29,6 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
-
-  const requestUrl = new URL(event.request.url);
-  if (requestUrl.pathname.endsWith("/assets/maple-st.jpg")) {
-    event.respondWith(fetch("/assets/maple-st-full.jpg?v=1", { cache: "reload" }));
-    return;
-  }
 
   event.respondWith(
     caches.match(event.request).then((cached) => {
