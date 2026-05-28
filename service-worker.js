@@ -1,9 +1,9 @@
-const CACHE_NAME = "marley-listings-v4";
+const CACHE_NAME = "marley-listings-v6";
 const APP_ASSETS = [
   "/",
   "/index.html",
   "/styles.css",
-  "/app.js",
+  "/app.js?v=3",
   "/manifest.webmanifest",
   "/icons/icon.svg",
   "/assets/social-share-600x315.jpg",
