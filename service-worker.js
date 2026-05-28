@@ -1,14 +1,14 @@
-const CACHE_NAME = "marley-listings-v10";
+const CACHE_NAME = "marley-listings-v12";
 const APP_ASSETS = [
   "/",
   "/index.html",
   "/styles.css?v=2",
   "/maple-fix.css?v=1",
-  "/app.js?v=6",
+  "/app.js?v=8",
   "/manifest.webmanifest",
   "/icons/icon.svg",
   "/assets/social-share-600x315.jpg",
-  "/assets/maple-st-758.jpg?v=2"
+  "/assets/maple-st-current.jpg?v=1"
 ];
 
 self.addEventListener("install", (event) => {
@@ -31,8 +31,12 @@ self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
 
   const requestUrl = new URL(event.request.url);
-  if (requestUrl.pathname.endsWith("/assets/maple-st.jpg") || requestUrl.pathname.endsWith("/assets/maple-st-full.jpg")) {
-    event.respondWith(fetch("/assets/maple-st-758.jpg?v=2", { cache: "reload" }));
+  if (
+    requestUrl.pathname.endsWith("/assets/maple-st.jpg") ||
+    requestUrl.pathname.endsWith("/assets/maple-st-full.jpg") ||
+    requestUrl.pathname.endsWith("/assets/maple-st-758.jpg")
+  ) {
+    event.respondWith(fetch("/assets/maple-st-current.jpg?v=1", { cache: "reload" }));
     return;
   }
 
