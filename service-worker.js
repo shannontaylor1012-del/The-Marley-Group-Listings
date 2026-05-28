@@ -1,9 +1,10 @@
-const CACHE_NAME = "marley-listings-v6";
+const CACHE_NAME = "marley-listings-v7";
 const APP_ASSETS = [
   "/",
   "/index.html",
-  "/styles.css",
-  "/app.js?v=3",
+  "/styles.css?v=2",
+  "/maple-fix.css?v=1",
+  "/app.js?v=4",
   "/manifest.webmanifest",
   "/icons/icon.svg",
   "/assets/social-share-600x315.jpg",
