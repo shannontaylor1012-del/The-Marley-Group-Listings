@@ -1,4 +1,4 @@
-const CACHE_NAME = "marley-listings-v2";
+const CACHE_NAME = "marley-listings-v4";
 const APP_ASSETS = [
   "/",
   "/index.html",
@@ -6,7 +6,8 @@ const APP_ASSETS = [
   "/app.js",
   "/manifest.webmanifest",
   "/icons/icon.svg",
-  "/assets/social-share-600x315.jpg"
+  "/assets/social-share-600x315.jpg",
+  "/assets/maple-st.jpg"
 ];
 
 self.addEventListener("install", (event) => {
