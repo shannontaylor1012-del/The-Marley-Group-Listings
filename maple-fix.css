@@ -1,0 +1,9 @@
+.listing-image img[src*="maple-st"],
+.dialog-body img[src*="maple-st"] {
+  object-fit: contain;
+  background: #080706;
+}
+
+.listing-card:hover .listing-image img[src*="maple-st"] {
+  transform: none;
+}
