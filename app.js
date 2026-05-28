@@ -108,7 +108,7 @@ const listings = [
     sqft: 2200,
     days: 1,
     zillowUrl: "https://www.zillow.com/homedetails/758-Maple-St-Pelion-SC-29123/11246733_zpid/?utm_campaign=zillowwebmessage&utm_medium=referral&utm_source=txtshare",
-    image: "assets/maple-st.jpg?v=3",
+    image: "assets/maple-st-758.jpg?v=2",
     description: "Pelion single-family property on Maple Street with three bedrooms, two baths, and approximately 2,200 square feet."
   }
 ];
