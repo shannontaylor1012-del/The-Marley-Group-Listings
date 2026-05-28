@@ -102,14 +102,14 @@ const listings = [
     title: "758 Maple St",
     location: "Pelion, SC 29123",
     type: "Single Family",
-    price: 155000,
+    price: 240000,
     beds: 3,
     baths: 2,
-    sqft: 1800,
+    sqft: 2200,
     days: 1,
     zillowUrl: "https://www.zillow.com/homedetails/758-Maple-St-Pelion-SC-29123/11246733_zpid/?utm_campaign=zillowwebmessage&utm_medium=referral&utm_source=txtshare",
-    image: "assets/social-share.svg",
-    description: "Pelion single-family property on Maple Street with three bedrooms, two baths, and approximately 1,800 square feet."
+    image: "assets/maple-st.jpg",
+    description: "Pelion single-family property on Maple Street with three bedrooms, two baths, and approximately 2,200 square feet."
   }
 ];
 
