@@ -108,7 +108,7 @@ const listings = [
     sqft: 2200,
     days: 1,
     zillowUrl: "https://www.zillow.com/homedetails/758-Maple-St-Pelion-SC-29123/11246733_zpid/?utm_campaign=zillowwebmessage&utm_medium=referral&utm_source=txtshare",
-    image: "assets/maple-st-758.jpg?v=2",
+    image: "https://raw.githubusercontent.com/shannontaylor1012-del/The-Marley-Group-Listings/main/assets/maple-st-current.jpg",
     description: "Pelion single-family property on Maple Street with three bedrooms, two baths, and approximately 2,200 square feet."
   }
 ];
@@ -184,7 +184,7 @@ function renderListings() {
     card.className = "listing-card";
     card.innerHTML = `
       <div class="listing-image">
-        <img src="${listing.image}" alt="${listing.title}" loading="eager" />
+        <img class="${listing.id === 8 ? "wide-photo" : ""}" src="${listing.image}" alt="${listing.title}" loading="eager" />
         <div class="badge-row">
           <span class="badge">${listing.type}</span>
           <button class="save-button ${state.saved.has(listing.id) ? "saved" : ""}" type="button" aria-label="Save ${listing.title}" data-save="${listing.id}">
@@ -239,8 +239,10 @@ function openDetails(id) {
   const listing = listings.find((item) => item.id === id);
   if (!listing) return;
 
-  document.querySelector("#dialogImage").src = listing.image;
-  document.querySelector("#dialogImage").alt = listing.title;
+  const dialogImage = document.querySelector("#dialogImage");
+  dialogImage.src = listing.image;
+  dialogImage.alt = listing.title;
+  dialogImage.classList.toggle("wide-photo", listing.id === 8);
   document.querySelector("#dialogType").textContent = listing.type;
   document.querySelector("#dialogTitle").textContent = listing.title;
   document.querySelector("#dialogLocation").textContent = listing.location;
